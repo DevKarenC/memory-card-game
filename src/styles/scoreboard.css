@@ -1,0 +1,15 @@
+.scoreboard {
+  color: #fff;
+  font-family: "Londrina Solid", cursive;
+  font-size: 1.75rem;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.current-score {
+  margin-bottom: 1rem;
+}
+
+.best-score {
+  margin-bottom: 2rem;
+}
