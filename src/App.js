@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "./styles/App.css";
 import Header from "./components/Header";
 import Scoreboard from "./components/Scoreboard";
 import Card from "./components/Card";
@@ -12,9 +13,11 @@ const App = () => {
     <React.Fragment>
       <Header />
       <Scoreboard />
-      {characters.map((char) => {
-        return <Card name={char.name} src={char.src} />;
-      })}
+      <div className="cards-container">
+        {characters.map((char) => {
+          return <Card key={char.name} name={char.name} src={char.src} />;
+        })}
+      </div>
     </React.Fragment>
   );
 };

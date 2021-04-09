@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../styles/scoreboard.css";
+import "../styles/Scoreboard.css";
 
 const Scoreboard = () => {
   const [currentScore, setCurrentScore] = useState(() => 0);

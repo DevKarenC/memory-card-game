@@ -1,0 +1,22 @@
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 315px;
+  height: 315px;
+  background-color: #fff56c;
+  border: 10px solid #26b9c8;
+}
+
+.char-image {
+  object-fit: contain;
+  width: 250px;
+  height: 250px;
+}
+
+.char-name {
+  font-family: "Londrina Solid", cursive;
+  font-size: 1.75rem;
+  margin: 0.5rem 0 0 0;
+}
