@@ -1,4 +1,10 @@
+html {
+  background-color: #0457a0;
+}
+
 .cards-container {
   display: grid;
-  grid-template-columns: repeat(4, 25%);
+  grid-template-columns: repeat(4, 320px);
+  gap: 25px;
+  justify-content: center;
 }
