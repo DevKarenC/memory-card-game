@@ -9,7 +9,9 @@ import characters from "./components/characters";
 const App = () => {
   const [gameOver, setGameOver] = useState(() => false);
   const [cardsClicked, setCardsClicked] = useState(() => []);
+  const [currentScore, setCurrentScore] = useState(() => 0);
 
+  // update the cardsClicked array upon clicking on each Card component
   const updateCardsClicked = (newCard) => {
     setCardsClicked((cardsClicked) => {
       return cardsClicked.concat([newCard]);
@@ -19,12 +21,14 @@ const App = () => {
   // only run when the cardsClicked array has changed (componentDidUpdate)
   useEffect(() => {
     // logic to check if there are duplicate cards, meaning game over
-    const updateGameOver = () => {
-      if (cardsClicked.length !== new Set(cardsClicked).size) {
-        setGameOver(true);
-      }
-    };
-    updateGameOver();
+    if (cardsClicked.length !== new Set(cardsClicked).size) {
+      setGameOver(true);
+    }
+  }, [cardsClicked]);
+
+  // logic to update current score
+  useEffect(() => {
+    setCurrentScore(cardsClicked.length);
   }, [cardsClicked]);
 
   // randomize card display upon card click (componentDidMount - useEffect hook)
@@ -38,7 +42,7 @@ const App = () => {
   return (
     <React.Fragment>
       <Header />
-      <Scoreboard />
+      <Scoreboard currentScore={currentScore} />
       <div className="cards-container">
         {characters.map((char) => {
           return (

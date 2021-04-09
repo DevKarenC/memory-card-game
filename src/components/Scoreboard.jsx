@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import "../styles/Scoreboard.css";
 
-const Scoreboard = () => {
-  const [currentScore, setCurrentScore] = useState(() => 0);
+const Scoreboard = ({ currentScore }) => {
   const [bestScore, setBestScore] = useState(() => 0);
 
-  const incrementCurrentScore = () => {
-    setCurrentScore((prevCurrentScore) => {});
-  };
+  // const incrementCurrentScore = () => {
+  //   setCurrentScore((prevCurrentScore) => {});
+  // };
 
   const updateBestScore = () => {
     setBestScore();
