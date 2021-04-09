@@ -1,0 +1,21 @@
+.creator {
+  color: #fff;
+  font-family: "Londrina Solid", cursive;
+  font-size: 1.75rem;
+  letter-spacing: 2px;
+  text-align: center;
+  height: 32px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.github-logo {
+  width: 28px;
+  height: auto;
+  margin: auto;
+  vertical-align: text-top;
+  display: inline-block;
+}

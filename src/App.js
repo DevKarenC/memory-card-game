@@ -3,6 +3,8 @@ import "./styles/App.css";
 import Header from "./components/Header";
 import Scoreboard from "./components/Scoreboard";
 import Card from "./components/Card";
+import Footer from "./components/Footer";
+
 import characters from "./components/characters";
 
 const App = () => {
@@ -18,6 +20,7 @@ const App = () => {
           return <Card key={char.name} name={char.name} src={char.src} />;
         })}
       </div>
+      <Footer />
     </React.Fragment>
   );
 };
