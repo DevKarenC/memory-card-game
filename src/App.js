@@ -1,9 +1,8 @@
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header"></header>
-    </div>
-  );
-}
+import React, { useState, useEffect } from "react";
+import Header from "./components/Header";
+
+const App = () => {
+  return <Header />;
+};
 
 export default App;

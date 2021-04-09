@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "Spongeboy-Me-Bob";
+  src: local("Spongeboy-Me-Bob"),
+    url(../fonts/Spongeboy\ Me\ Bob.ttf) format("truetype");
+}
+
+h1 {
+  font-family: "Spongeboy-Me-Bob";
+  text-align: center;
+}
