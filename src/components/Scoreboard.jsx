@@ -15,8 +15,8 @@ const Scoreboard = () => {
 
   return (
     <div className="scoreboard">
-      <div class="current-score">Current Score: {currentScore}</div>
-      <div class="best-score">Best Score: {bestScore}</div>
+      <div className="current-score">Current Score: {currentScore}</div>
+      <div className="best-score">Best Score: {bestScore}</div>
     </div>
   );
 };
