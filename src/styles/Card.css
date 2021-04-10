@@ -8,6 +8,11 @@
   height: 300px;
   background-color: #fff56c;
   border: 10px solid #26b9c8;
+  cursor: pointer;
+}
+
+.card-container:hover {
+  background-color: #fff;
 }
 
 .card-container > .char-image {
