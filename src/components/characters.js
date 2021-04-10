@@ -14,6 +14,7 @@ import G from "../images/Gary.png";
 import B from "../images/Beatrice.png";
 import MT from "../images/MrsTentacles.png";
 import PP from "../images/Polene-Puff.png";
+import randomizeCard from "../helpers/randomizeCard";
 
 const characters = [
   { name: "King Neptune", src: KN },
@@ -33,5 +34,7 @@ const characters = [
   { name: "Mrs. Tentacles", src: MT },
   { name: "Polene Puff", src: PP },
 ];
+
+randomizeCard(characters);
 
 export default characters;
