@@ -46,7 +46,9 @@ const App = () => {
           src={char.src}
           onClick={() => {
             updateCardsClicked(char.name);
-            randomizeCard(characters);
+            if (!gameOver) {
+              randomizeCard(characters);
+            }
           }}
         />
       );
