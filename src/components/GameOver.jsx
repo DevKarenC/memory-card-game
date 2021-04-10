@@ -6,7 +6,7 @@ const GameOver = ({ handlePlayAgain, currentScore }) => {
   const [open, setOpen] = useState(true);
 
   return (
-    <Modal onClose={() => setOpen(false)} open={open}>
+    <Modal className="game-over" onClose={() => setOpen(false)} open={open}>
       {currentScore === 16 ? (
         <Modal.Header>Winner!</Modal.Header>
       ) : (

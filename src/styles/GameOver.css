@@ -21,7 +21,7 @@
   border: 0 !important;
 }
 
-.content > p {
+.game-over > .content > p {
   font-family: "Londrina Solid", cursive;
   font-size: 3rem;
   letter-spacing: 1px;

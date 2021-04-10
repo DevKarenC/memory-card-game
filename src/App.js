@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./styles/App.css";
 import Header from "./components/Header";
 import Scoreboard from "./components/Scoreboard";
+import HowToPlay from "./components/HowToPlay";
 import Card from "./components/Card";
 import GameOver from "./components/GameOver";
 import Footer from "./components/Footer";
@@ -9,9 +10,10 @@ import characters from "./components/characters";
 import randomizeCard from "./helpers/randomizeCard";
 
 const App = () => {
-  const [gameOver, setGameOver] = useState(() => false);
-  const [cardsClicked, setCardsClicked] = useState(() => []);
   const [currentScore, setCurrentScore] = useState(() => 0);
+  const [cardsClicked, setCardsClicked] = useState(() => []);
+  const [gameOver, setGameOver] = useState(() => false);
+  const [showHowToPlay, setShowHowToPlay] = useState(() => false);
 
   // update the cardsClicked array upon clicking on each Card component
   const updateCardsClicked = (newCard) => {
@@ -58,10 +60,21 @@ const App = () => {
     setCardsClicked([]);
   };
 
+  // toggle How To Play button to display instructions modal
+  const handleHowToPlay = () => {
+    setShowHowToPlay(!showHowToPlay);
+  };
+
   return (
     <React.Fragment>
       <Header />
       <Scoreboard currentScore={currentScore} />
+      <div className="how-to-play-wrapper">
+        <button className="how-to-play-button" onClick={handleHowToPlay}>
+          How To Play
+        </button>
+      </div>
+      {showHowToPlay ? <HowToPlay handleHowToPlay={handleHowToPlay} /> : null}
       <div className="cards-container">{displayCards()}</div>
       {gameOver ? (
         <GameOver

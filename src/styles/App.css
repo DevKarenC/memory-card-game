@@ -9,3 +9,19 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.how-to-play-wrapper {
+  text-align: center;
+}
+
+.how-to-play-button {
+  background-color: #fff56c;
+  border: 1px solid #fff56c;
+  border-radius: 10px;
+  font-family: "Londrina Solid", cursive;
+  font-size: 1.75rem;
+  letter-spacing: 2px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
