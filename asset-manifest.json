@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/react-memory-card-game/static/css/main.9d7a08b8.chunk.css",
+    "main.js": "/react-memory-card-game/static/js/main.af7a4cf3.chunk.js",
+    "main.js.map": "/react-memory-card-game/static/js/main.af7a4cf3.chunk.js.map",
+    "runtime-main.js": "/react-memory-card-game/static/js/runtime-main.bc49c6bc.js",
+    "runtime-main.js.map": "/react-memory-card-game/static/js/runtime-main.bc49c6bc.js.map",
+    "static/css/2.0a9d9df6.chunk.css": "/react-memory-card-game/static/css/2.0a9d9df6.chunk.css",
+    "static/js/2.e71c7bc9.chunk.js": "/react-memory-card-game/static/js/2.e71c7bc9.chunk.js",
+    "static/js/2.e71c7bc9.chunk.js.map": "/react-memory-card-game/static/js/2.e71c7bc9.chunk.js.map",
+    "index.html": "/react-memory-card-game/index.html",
+    "static/css/2.0a9d9df6.chunk.css.map": "/react-memory-card-game/static/css/2.0a9d9df6.chunk.css.map",
+    "static/css/main.9d7a08b8.chunk.css.map": "/react-memory-card-game/static/css/main.9d7a08b8.chunk.css.map",
+    "static/js/2.e71c7bc9.chunk.js.LICENSE.txt": "/react-memory-card-game/static/js/2.e71c7bc9.chunk.js.LICENSE.txt",
+    "static/media/Beatrice.404ce773.png": "/react-memory-card-game/static/media/Beatrice.404ce773.png",
+    "static/media/Gary.dad826a0.png": "/react-memory-card-game/static/media/Gary.dad826a0.png",
+    "static/media/Karen.9b3ea231.png": "/react-memory-card-game/static/media/Karen.9b3ea231.png",
+    "static/media/King-Neptune.15b6b695.png": "/react-memory-card-game/static/media/King-Neptune.15b6b695.png",
+    "static/media/Krusty-Krab-Hat.6272ecca.png": "/react-memory-card-game/static/media/Krusty-Krab-Hat.6272ecca.png",
+    "static/media/Larry-the-Lobster.5acfef25.png": "/react-memory-card-game/static/media/Larry-the-Lobster.5acfef25.png",
+    "static/media/MrKrabs.b56b6972.png": "/react-memory-card-game/static/media/MrKrabs.b56b6972.png",
+    "static/media/MrsPuff.aeae4da7.png": "/react-memory-card-game/static/media/MrsPuff.aeae4da7.png",
+    "static/media/MrsTentacles.2c974eec.png": "/react-memory-card-game/static/media/MrsTentacles.2c974eec.png",
+    "static/media/Patrick.40619d1e.png": "/react-memory-card-game/static/media/Patrick.40619d1e.png",
+    "static/media/Pearl-the-Whale.47bc1eb8.png": "/react-memory-card-game/static/media/Pearl-the-Whale.47bc1eb8.png",
+    "static/media/Plankton.6f08f077.png": "/react-memory-card-game/static/media/Plankton.6f08f077.png",
+    "static/media/Polene-Puff.ef10128c.png": "/react-memory-card-game/static/media/Polene-Puff.ef10128c.png",
+    "static/media/Sandy.07f09b29.png": "/react-memory-card-game/static/media/Sandy.07f09b29.png",
+    "static/media/SpongeBob-SquarePants.a93e19a6.png": "/react-memory-card-game/static/media/SpongeBob-SquarePants.a93e19a6.png",
+    "static/media/Header.css": "/react-memory-card-game/static/media/Spongeboy Me Bob.885335f3.ttf",
+    "static/media/Squidward.472cad0f.png": "/react-memory-card-game/static/media/Squidward.472cad0f.png",
+    "static/media/semantic.min.css": "/react-memory-card-game/static/media/outline-icons.ddae9b1b.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bc49c6bc.js",
+    "static/css/2.0a9d9df6.chunk.css",
+    "static/js/2.e71c7bc9.chunk.js",
+    "static/css/main.9d7a08b8.chunk.css",
+    "static/js/main.af7a4cf3.chunk.js"
+  ]
+}
