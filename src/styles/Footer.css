@@ -1,3 +1,7 @@
+footer {
+  margin: 2rem 0;
+}
+
 footer > .creator {
   color: #fff;
   font-family: "Londrina Solid", cursive;

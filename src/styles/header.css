@@ -7,7 +7,8 @@
 header > h1 {
   color: #fff;
   font-family: "Spongeboy-Me-Bob";
-  font-size: 3rem;
+  font-size: 4rem;
   letter-spacing: 2px;
   text-align: center;
+  margin: 3rem 0 1.5rem 0 !important;
 }

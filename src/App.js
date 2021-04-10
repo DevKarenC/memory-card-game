@@ -14,9 +14,11 @@ const App = () => {
 
   // update the cardsClicked array upon clicking on each Card component
   const updateCardsClicked = (newCard) => {
-    setCardsClicked((cardsClicked) => {
-      return cardsClicked.concat([newCard]);
-    });
+    if (!gameOver) {
+      setCardsClicked((cardsClicked) => {
+        return cardsClicked.concat([newCard]);
+      });
+    }
   };
 
   // only run when the cardsClicked array has changed (componentDidUpdate)
