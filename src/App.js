@@ -35,11 +35,6 @@ const App = () => {
     setCurrentScore(new Set(cardsClicked).size);
   }, [cardsClicked]);
 
-  // randomize card display upon card click (i.e. score change)
-  useEffect(() => {
-    randomizeCard(characters);
-  }, [currentScore]);
-
   const displayCards = () => {
     return characters.map((char) => {
       return (
@@ -49,6 +44,7 @@ const App = () => {
           src={char.src}
           onClick={() => {
             updateCardsClicked(char.name);
+            randomizeCard(characters);
           }}
         />
       );

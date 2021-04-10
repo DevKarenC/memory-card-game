@@ -7,7 +7,11 @@ const GameOver = ({ handlePlayAgain, currentScore }) => {
 
   return (
     <Modal onClose={() => setOpen(false)} open={open}>
-      <Modal.Header>Game Over</Modal.Header>
+      {currentScore === 16 ? (
+        <Modal.Header>Winner!</Modal.Header>
+      ) : (
+        <Modal.Header>Game Over</Modal.Header>
+      )}
       <Modal.Content>
         <p>
           You scored {currentScore} point{currentScore !== 1 ? "s" : null}!

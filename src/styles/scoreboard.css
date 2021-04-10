@@ -6,8 +6,9 @@
   text-align: center;
 }
 
-.scoreboard > .current-score {
-  margin-bottom: 2rem;
+.scoreboard > .max-score,
+.current-score {
+  margin-bottom: 1.5rem;
 }
 
 .scoreboard > .best-score {
