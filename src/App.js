@@ -29,7 +29,7 @@ const App = () => {
 
   // logic to update current score
   useEffect(() => {
-    setCurrentScore(cardsClicked.length);
+    setCurrentScore(new Set(cardsClicked).size);
   }, [cardsClicked]);
 
   // randomize card display upon card click (componentDidMount - useEffect hook)
