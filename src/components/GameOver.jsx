@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { Button, Header, Image, Modal } from "semantic-ui-react";
-// import "semantic-ui-css/semantic.min.css";
+import { Button, Modal } from "semantic-ui-react";
+import "../styles/GameOver.css";
 
 const GameOver = ({ handlePlayAgain, currentScore }) => {
   const [open, setOpen] = useState(true);
@@ -9,11 +9,13 @@ const GameOver = ({ handlePlayAgain, currentScore }) => {
     <Modal onClose={() => setOpen(false)} open={open}>
       <Modal.Header>Game Over</Modal.Header>
       <Modal.Content>
-        <p>You scored {currentScore} points!</p>
+        <p>
+          You scored {currentScore} point{currentScore !== 1 ? "s" : null}!
+        </p>
       </Modal.Content>
       <Modal.Actions>
-        <button onClick={handlePlayAgain}>Play Again</button>
-        <button onClick={() => setOpen(false)}>Close</button>
+        <Button onClick={handlePlayAgain}>Play Again</Button>
+        <Button onClick={() => setOpen(false)}>Close</Button>
       </Modal.Actions>
     </Modal>
   );

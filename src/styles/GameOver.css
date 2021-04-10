@@ -1,0 +1,45 @@
+.ui.dimmer {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.ui.modal {
+  background-color: #0457a0 !important;
+  width: 600px !important;
+}
+
+.ui.modal > * {
+  background-color: #0457a0 !important;
+  color: #fff !important;
+}
+
+.ui.modal > .header {
+  font-family: "Spongeboy-Me-Bob" !important;
+  font-size: 4rem !important;
+  letter-spacing: 5px;
+  text-align: center;
+  padding: 3rem 0 0 0 !important;
+  border: 0 !important;
+}
+
+.content > p {
+  font-family: "Londrina Solid", cursive;
+  font-size: 3rem;
+  letter-spacing: 1px;
+  text-align: center;
+  border: 0 !important;
+}
+
+.ui.modal > .actions {
+  text-align: center !important;
+  padding-bottom: 2rem !important;
+  border: 0 !important;
+}
+
+.ui.button {
+  font-family: "Londrina Solid", cursive !important;
+  font-size: 1.5rem !important;
+  letter-spacing: 1px;
+  background-color: #fff56c !important;
+  color: #000 !important;
+  padding: 1rem 1.25rem;
+}
