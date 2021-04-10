@@ -4,7 +4,7 @@
     url(../fonts/Spongeboy\ Me\ Bob.ttf) format("truetype");
 }
 
-h1 {
+header > h1 {
   color: #fff;
   font-family: "Spongeboy-Me-Bob";
   font-size: 3rem;

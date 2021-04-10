@@ -3,6 +3,7 @@ import "./styles/App.css";
 import Header from "./components/Header";
 import Scoreboard from "./components/Scoreboard";
 import Card from "./components/Card";
+import GameOver from "./components/GameOver";
 import Footer from "./components/Footer";
 import characters from "./components/characters";
 
@@ -39,6 +40,13 @@ const App = () => {
   //   randomizeCardDisplay();
   // });
 
+  // reset all game data
+  const handlePlayAgain = () => {
+    setGameOver(false);
+    setCurrentScore(0);
+    setCardsClicked([]);
+  };
+
   return (
     <React.Fragment>
       <Header />
@@ -58,6 +66,12 @@ const App = () => {
           );
         })}
       </div>
+      {gameOver ? (
+        <GameOver
+          handlePlayAgain={handlePlayAgain}
+          currentScore={currentScore}
+        />
+      ) : null}
       <Footer />
     </React.Fragment>
   );

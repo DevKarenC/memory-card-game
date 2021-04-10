@@ -9,13 +9,13 @@
   border: 10px solid #26b9c8;
 }
 
-.char-image {
+.card-container > .char-image {
   object-fit: contain;
   width: 250px;
   height: 250px;
 }
 
-.char-name {
+.card-container > .char-name {
   font-family: "Londrina Solid", cursive;
   font-size: 1.75rem;
   margin: 0.5rem 0 0 0;

@@ -1,4 +1,4 @@
-.creator {
+footer > .creator {
   color: #fff;
   font-family: "Londrina Solid", cursive;
   font-size: 1.75rem;
@@ -7,12 +7,12 @@
   height: 32px;
 }
 
-a {
+footer a {
   color: #fff;
   text-decoration: none;
 }
 
-.github-logo {
+footer .github-logo {
   width: 28px;
   height: auto;
   margin: auto;

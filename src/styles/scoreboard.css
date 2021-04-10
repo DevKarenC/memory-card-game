@@ -6,10 +6,10 @@
   text-align: center;
 }
 
-.current-score {
+.scoreboard > .current-score {
   margin-bottom: 1rem;
 }
 
-.best-score {
+.scoreboard > .best-score {
   margin-bottom: 2rem;
 }
