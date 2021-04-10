@@ -15,6 +15,7 @@ const Footer = () => {
           <img src={githubLogo} alt="Github Logo" className="github-logo" />
         </a>
       </p>
+      <p className="copyright"> All images copyright owned by Viacom.</p>
     </footer>
   );
 };

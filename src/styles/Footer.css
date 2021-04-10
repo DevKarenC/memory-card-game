@@ -1,5 +1,5 @@
 footer {
-  margin: 2rem 0;
+  margin: 2rem 0 1rem 0;
 }
 
 footer > .creator {
@@ -9,6 +9,7 @@ footer > .creator {
   letter-spacing: 2px;
   text-align: center;
   height: 32px;
+  margin-bottom: 1rem;
 }
 
 footer a {
@@ -26,4 +27,12 @@ footer .github-logo {
   margin: auto;
   vertical-align: text-top;
   display: inline-block;
+}
+
+footer > .copyright {
+  color: #fff;
+  font-family: "Londrina Solid", cursive;
+  font-size: 1.55rem;
+  letter-spacing: 2px;
+  text-align: center;
 }

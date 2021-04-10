@@ -17,8 +17,8 @@
 
 .card-container > .char-image {
   object-fit: contain;
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
 }
 
 .card-container > .char-name {
