@@ -32,6 +32,13 @@ const App = () => {
     }
   }, [cardsClicked]);
 
+  // set gameOver to true when the player reaches max score
+  useEffect(() => {
+    if (currentScore === 16) {
+      setGameOver(true);
+    }
+  }, [currentScore]);
+
   const displayCards = () => {
     return characters.map((char) => {
       return (

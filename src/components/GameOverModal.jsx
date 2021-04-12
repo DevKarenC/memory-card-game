@@ -4,10 +4,11 @@ import "../styles/GameOverModal.css";
 
 const GameOverModal = ({ handlePlayAgain, currentScore }) => {
   const [open, setOpen] = useState(true);
+  const maxScore = 16;
 
   return (
     <Modal className="game-over" onClose={() => setOpen(false)} open={open}>
-      {currentScore === 16 ? (
+      {currentScore === maxScore ? (
         <Modal.Header>Winner!</Modal.Header>
       ) : (
         <Modal.Header>Game Over</Modal.Header>
