@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Button, Modal } from "semantic-ui-react";
-import "../styles/GameOver.css";
+import "../styles/GameOverModal.css";
 
-const GameOver = ({ handlePlayAgain, currentScore }) => {
+const GameOverModal = ({ handlePlayAgain, currentScore }) => {
   const [open, setOpen] = useState(true);
 
   return (
@@ -25,4 +25,4 @@ const GameOver = ({ handlePlayAgain, currentScore }) => {
   );
 };
 
-export default GameOver;
+export default GameOverModal;

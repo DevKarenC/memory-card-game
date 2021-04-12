@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import "./styles/App.css";
 import Header from "./components/Header";
 import Scoreboard from "./components/Scoreboard";
-import HowToPlay from "./components/HowToPlay";
+import HowToPlayModal from "./components/HowToPlayModal";
 import Card from "./components/Card";
-import GameOver from "./components/GameOver";
+import GameOverModal from "./components/GameOverModal";
 import Footer from "./components/Footer";
 import characters from "./components/characters";
 import randomizeCard from "./helpers/randomizeCard";
@@ -13,7 +13,7 @@ const App = () => {
   const [currentScore, setCurrentScore] = useState(() => 0);
   const [cardsClicked, setCardsClicked] = useState(() => []);
   const [gameOver, setGameOver] = useState(() => false);
-  const [showHowToPlay, setShowHowToPlay] = useState(() => false);
+  const [showHowToPlayModal, setShowHowToPlayModal] = useState(() => false);
 
   // update the cardsClicked array upon clicking on each Card component
   const updateCardsClicked = (newCard) => {
@@ -63,8 +63,8 @@ const App = () => {
   };
 
   // toggle How To Play button to display instructions modal
-  const handleHowToPlay = () => {
-    setShowHowToPlay(!showHowToPlay);
+  const handleHowToPlayModal = () => {
+    setShowHowToPlayModal(!showHowToPlayModal);
   };
 
   return (
@@ -72,14 +72,16 @@ const App = () => {
       <Header />
       <Scoreboard currentScore={currentScore} />
       <div className="how-to-play-wrapper">
-        <button className="how-to-play-button" onClick={handleHowToPlay}>
+        <button className="how-to-play-button" onClick={handleHowToPlayModal}>
           How To Play
         </button>
       </div>
-      {showHowToPlay ? <HowToPlay handleHowToPlay={handleHowToPlay} /> : null}
+      {showHowToPlayModal ? (
+        <HowToPlayModal handleHowToPlayModal={handleHowToPlayModal} />
+      ) : null}
       <div className="cards-container">{displayCards()}</div>
       {gameOver ? (
-        <GameOver
+        <GameOverModal
           handlePlayAgain={handlePlayAgain}
           currentScore={currentScore}
         />

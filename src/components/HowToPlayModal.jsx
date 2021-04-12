@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Button, Modal } from "semantic-ui-react";
-import "../styles/HowToPlay.css";
+import "../styles/HowToPlayModal.css";
 
-const HowToPlay = ({ handleHowToPlay }) => {
+const HowToPlayModal = ({ handleHowToPlayModal }) => {
   const [open, setOpen] = useState(true);
   return (
     <Modal className="how-to-play" onClose={() => setOpen(false)} open={open}>
@@ -19,7 +19,7 @@ const HowToPlay = ({ handleHowToPlay }) => {
         <Button
           onClick={() => {
             setOpen(false);
-            handleHowToPlay();
+            handleHowToPlayModal();
           }}
         >
           Close
@@ -29,4 +29,4 @@ const HowToPlay = ({ handleHowToPlay }) => {
   );
 };
 
-export default HowToPlay;
+export default HowToPlayModal;
