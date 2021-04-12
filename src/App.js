@@ -24,17 +24,12 @@ const App = () => {
     }
   };
 
-  // only run when the cardsClicked array has changed (componentDidUpdate)
+  // logic to update current score and game over status upon cardsClicked array change
   useEffect(() => {
-    // logic to check if there are duplicate cards, meaning game over
+    setCurrentScore(new Set(cardsClicked).size);
     if (cardsClicked.length !== new Set(cardsClicked).size) {
       setGameOver(true);
     }
-  }, [cardsClicked]);
-
-  // logic to update current score
-  useEffect(() => {
-    setCurrentScore(new Set(cardsClicked).size);
   }, [cardsClicked]);
 
   const displayCards = () => {
