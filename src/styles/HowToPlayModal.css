@@ -1,3 +1,5 @@
+/* !important used to override semantic-ui-react CSS styling */
+
 .how-to-play p {
   font-family: "Londrina Solid", cursive;
   font-size: 1.75rem;

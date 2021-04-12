@@ -1,3 +1,5 @@
+/* !important used to override semantic-ui-react CSS styling */
+
 body {
   background-color: #0457a0 !important;
 }
